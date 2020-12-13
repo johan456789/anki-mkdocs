@@ -1,0 +1,1077 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Managing Files - Anki Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#managing-files-and-your-collection" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Anki Manual" class="md-header-nav__button md-logo" aria-label="Anki Manual">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Anki Manual
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Managing Files
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Anki Manual" class="md-nav__button md-logo" aria-label="Anki Manual">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Anki Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../intro/" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../background/" class="md-nav__link">
+      Background
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../studying/" class="md-nav__link">
+      Studying
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../editing/" class="md-nav__link">
+      Adding/Editing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../templates_intro/" class="md-nav__link">
+      Card Templates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../templates_fields/" class="md-nav__link">
+      Field Replacements
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../templates_generation/" class="md-nav__link">
+      Card Generation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../templates_styling/" class="md-nav__link">
+      Styling & HTML
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../preferences/" class="md-nav__link">
+      Preferences
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../deck-options/" class="md-nav__link">
+      Deck Options
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../syncing/" class="md-nav__link">
+      Syncing with AnkiWeb
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../profiles/" class="md-nav__link">
+      Profiles
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../browsing/" class="md-nav__link">
+      Browsing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../filtered-decks/" class="md-nav__link">
+      Filtered Decks
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../searching/" class="md-nav__link">
+      Searching
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../importing/" class="md-nav__link">
+      Importing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../exporting/" class="md-nav__link">
+      Exporting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Managing Files
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Managing Files
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#checking-your-collection" class="md-nav__link">
+    Checking Your Collection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-locations" class="md-nav__link">
+    File Locations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#startup-options" class="md-nav__link">
+    Startup Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dropbox-and-file-syncing" class="md-nav__link">
+    DropBox and File Syncing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-filesystems" class="md-nav__link">
+    Network Filesystems
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-from-a-flash-drive" class="md-nav__link">
+    Running from a Flash Drive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backups" class="md-nav__link">
+    Backups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inaccessible-harddisk" class="md-nav__link">
+    Inaccessible Harddisk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions-of-temp-folder" class="md-nav__link">
+    Permissions of Temp Folder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corrupt-collections" class="md-nav__link">
+    Corrupt Collections
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../stats/" class="md-nav__link">
+      Statistics
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../media/" class="md-nav__link">
+      Media
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../math/" class="md-nav__link">
+      Math & Symbols
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../leeches/" class="md-nav__link">
+      Leeches
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../addons/" class="md-nav__link">
+      Add-ons
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../misc/" class="md-nav__link">
+      Miscellaneous
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contrib/" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faqs/" class="md-nav__link">
+      FAQs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../resources/" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#checking-your-collection" class="md-nav__link">
+    Checking Your Collection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-locations" class="md-nav__link">
+    File Locations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#startup-options" class="md-nav__link">
+    Startup Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dropbox-and-file-syncing" class="md-nav__link">
+    DropBox and File Syncing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-filesystems" class="md-nav__link">
+    Network Filesystems
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-from-a-flash-drive" class="md-nav__link">
+    Running from a Flash Drive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backups" class="md-nav__link">
+    Backups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inaccessible-harddisk" class="md-nav__link">
+    Inaccessible Harddisk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissions-of-temp-folder" class="md-nav__link">
+    Permissions of Temp Folder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corrupt-collections" class="md-nav__link">
+    Corrupt Collections
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="managing-files-and-your-collection">Managing Files and Your Collection<a class="headerlink" href="#managing-files-and-your-collection" title="Permanent link">&para;</a></h1>
+<h2 id="checking-your-collection">Checking Your Collection<a class="headerlink" href="#checking-your-collection" title="Permanent link">&para;</a></h2>
+<p>It’s a good idea to occasionally check your collection file for
+problems. You can do this via the Tools&gt;Check Database menu item.
+Checking the database ensures the file is not corrupted, rebuilds some
+internal structures, and optimizes the file.</p>
+<p>When you check the database, your tag list is also rebuilt. When you
+delete individual decks or cards, Anki does not update the list of used
+tags, as it’s inefficient to do so. If you want to clear old tags out
+from the list that are no longer in use, checking your database is the
+way to do it.</p>
+<p>Please note that Anki will automatically optimize your collection once
+every 2 weeks. This optimization ensures the collection performs well,
+but it does not check for errors or rebuild the tag list when
+automatically optimizing.</p>
+<h2 id="file-locations">File Locations<a class="headerlink" href="#file-locations" title="Permanent link">&para;</a></h2>
+<p>On <strong>Windows</strong>, the latest Anki versions store your Anki files in your
+appdata folder. You can access it by opening the file manager, and
+typing <code>%APPDATA%\Anki2</code> in the location field. Older versions of Anki
+stored your Anki files in a folder called <code>Anki</code> in your <code>Documents</code>
+folder.</p>
+<p>On <strong>Mac</strong> computers, recent Anki versions store all their files in the
+<code>~/Library/Application Support/Anki2</code> folder. The Library folder is
+hidden by default, but can be revealed in Finder by holding down the
+option key while clicking on the Go menu. If you’re on an older Anki
+version, your Anki files will be in your <code>Documents/Anki</code> folder.</p>
+<p>On <strong>Linux</strong>, recent Anki versions store your data in
+<code>~/.local/share/Anki2</code>, or <code>$XDG_DATA_HOME/Anki2</code> if you have set a
+custom data path. Older versions of Anki stored your files in
+<code>~/Documents/Anki</code> or <code>~/Anki</code>.</p>
+<p>Within the Anki folder, the program-level and profile-level preferences
+are stored in a file called prefs.db.</p>
+<p>There is also a separate folder for each profile. The folder contains:</p>
+<ul>
+<li>
+<p>Your notes, decks, cards and so on in a file called collection.anki2</p>
+</li>
+<li>
+<p>Your audio and images in a collection.media folder</p>
+</li>
+<li>
+<p>A backups folder</p>
+</li>
+<li>
+<p>Some system files</p>
+</li>
+</ul>
+<p>You should never copy or move your collection while Anki is open. Doing
+so could cause your collection to become corrupted. Please don’t move or
+modify the other files in the folder either.</p>
+<h2 id="startup-options">Startup Options<a class="headerlink" href="#startup-options" title="Permanent link">&para;</a></h2>
+<p>If you have made a destructive change on one computer and have an
+undamaged copy on another computer, you may wish to start Anki without
+syncing in order to use the full sync option without first downloading
+the changes. Similarly, if you are experiencing problems with Anki, you
+might want to (or might be instructed to) disable add-ons temporarily to
+see if one might be causing the problem. You can do both of these things
+by holding down the Shift key while starting Anki.</p>
+<p>It is possible to specify a custom folder location during startup. This
+is an advanced feature that is primarily intended to be used with
+portable installations, and we recommend you use the default location in
+most circumstances.</p>
+<p>The syntax to specify an alternate folder is as follows:</p>
+<pre><code>anki -b /path/to/anki/folder
+</code></pre>
+<ul>
+<li>
+<p>If you have multiple profiles, you can pass -p &lt;name&gt; to load
+  a specific profile.</p>
+</li>
+<li>
+<p>To change the interface language, use -l &lt;iso 639-1 language
+  code&gt;, such as "-l ja" for Japanese.</p>
+</li>
+</ul>
+<p>If you always want to use a custom folder location, you can modify your
+shortcut to Anki. On Windows, right-click on the shortcut, choose
+Properties, select the Shortcut tab, and add "-b
+\path\to\data\folder" after the path to the program, which should
+leave you with something like</p>
+<pre><code>"C:\Program Files\Anki\anki.exe" -b "C:\AnkiDataFolder"
+</code></pre>
+<p>You can also use this technique with the -l option to easily use Anki in
+different languages.</p>
+<p>On Windows, you should use a backslash (\) not a forward slash (/).</p>
+<p>On a Mac there is no easy way to alter the behaviour when clicking on
+the Anki icon, but it is possible to start Anki with a custom base
+folder from a terminal:</p>
+<pre><code>open /Applications/Anki.app --args -b ~/myankifolder
+</code></pre>
+<p>Alternatively, you can define the environment variable "ANKI_BASE".
+On Windows, you can define the environment variable with:</p>
+<pre><code>set "ANKI_BASE=C:/path/to/AnkiDataFolder"
+</code></pre>
+<p>On Linux and Mac OS, you can use:</p>
+<pre><code>export ANKI_BASE="/path/to/AnkiDataFolder"
+</code></pre>
+<h2 id="dropbox-and-file-syncing">DropBox and File Syncing<a class="headerlink" href="#dropbox-and-file-syncing" title="Permanent link">&para;</a></h2>
+<p>We do not recommend you sync your Anki folder directly with a
+third-party synchronization service, as it can lead to database
+corruption when files are synced while in use.</p>
+<p>If you just want to synchronize your media, you can link external
+folders into services like DropBox. Please see <a href="http://web.archive.org/web/20180919153730/http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders">DropboxWiki: Sync 
+Folders Outside Dropbox (archive.org)</a>
+for more info.</p>
+<p>If you wish to keep your collection in sync as well, it is strongly
+recommended that you create a script that copies your files from your
+synced folder to a local folder, launches Anki, and then copies the
+files back when Anki is closed. This will ensure that the files are
+never synchronized while they are open.</p>
+<h2 id="network-filesystems">Network Filesystems<a class="headerlink" href="#network-filesystems" title="Permanent link">&para;</a></h2>
+<p>We strongly recommend you have Anki store your files on a local hard
+disk, as network filesystems can lead to database corruption. If a
+network filesystem is your only option, regular use of Tools&gt;Check
+Database to detect corruption is recommended.</p>
+<h2 id="running-from-a-flash-drive">Running from a Flash Drive<a class="headerlink" href="#running-from-a-flash-drive" title="Permanent link">&para;</a></h2>
+<p>On Windows, Anki can be installed on a USB / flash drive and run as a
+portable application. The following example assumes your USB drive is
+drive G.</p>
+<ul>
+<li>
+<p>Copy the \Program Files\Anki folder to the flash drive, so you
+  have a folder like G:\Anki.</p>
+</li>
+<li>
+<p>Create a text file called G:\anki.bat with the following text:</p>
+<p>g:\anki\anki.exe -b g:\ankidata</p>
+</li>
+</ul>
+<p>If you would like to prevent the black command prompt window from
+remaining open, you can instead use:</p>
+<pre><code>start /b g:\anki\anki.exe -b g:\ankidata
+</code></pre>
+<ul>
+<li>Double-clicking on anki.bat should start Anki with the user data
+  stored in G:\ankidata.</li>
+</ul>
+<p>The full path including drive letter is required - if you try using
+<code>\anki\anki.exe</code> instead you will find syncing stops working.</p>
+<p>Media syncing with AnkiWeb may not work if your flash drive is formatted
+as FAT32. Please format the drive as NTFS to ensure media syncs
+correctly.</p>
+<h2 id="backups">Backups<a class="headerlink" href="#backups" title="Permanent link">&para;</a></h2>
+<p>Each time your collection is closed (when closing Anki, switching
+profiles, or synchronizing your deck), Anki exports your collection into
+the backups folder. By default Anki will store up to 30 backups; you can
+adjust this in the <a href="../preferences/">preferences</a>.</p>
+<p>Automatic backups do not protect against disk or computer failure, and
+do not extend to your media. To keep your collections safe, please
+consider making manual backups too.</p>
+<p>The easiest way to make a manual backup is to use the File&gt;Export
+menu item to export all decks with scheduling and media information
+included, which will save your data to a .colpkg file.</p>
+<p>If you want to back up multiple profiles and your add-ons as well, you
+can make a complete copy of your <a href="#file-locations">Anki folder</a>. Please make sure
+you close Anki first, as backups may be corrupt if run while Anki is
+open.</p>
+<p>To restore from an automatic backup:</p>
+<ol>
+<li>
+<p>From the File menu, select Switch Profile to show the Profiles
+    window.</p>
+</li>
+<li>
+<p>Select the profile you wish to restore on the left.</p>
+</li>
+<li>
+<p>Click the Open Backup…​ button.</p>
+</li>
+<li>
+<p>Choose Yes and the available backups will appear.</p>
+</li>
+<li>
+<p>Open a backup based on the date you wish to restore to.</p>
+</li>
+<li>
+<p>Check that that the backup that was restored was the one you
+    intended. If you wish to try a different backup, return to step 1.</p>
+</li>
+<li>
+<p>Anki has disabled automatic syncing and backups while you check the
+    backup. When you’re happy with the backup you’ve selected, quit Anki
+    and start it again to return to the normal behaviour.</p>
+</li>
+</ol>
+<p>Anki also logs deleted notes to a text file called deleted.txt in your
+profile folder. These notes are in a text format that can be read by
+File&gt;Import, though please note the import feature only supports a
+single note type at one time, so if you have deleted notes from
+different note types, you’ll need to split the file into separate files
+for each note type first.</p>
+<h2 id="inaccessible-harddisk">Inaccessible Harddisk<a class="headerlink" href="#inaccessible-harddisk" title="Permanent link">&para;</a></h2>
+<p>If Anki can’t write to files in the <a href="#file-locations">Anki folder</a>, a message
+will be displayed on startup saying that Anki can’t write to the
+harddisk, and Anki will close. If you’re unsure how to fix the
+permissions, please contact someone near you who is knowledgeable about
+computers and can help you out.</p>
+<h2 id="permissions-of-temp-folder">Permissions of Temp Folder<a class="headerlink" href="#permissions-of-temp-folder" title="Permanent link">&para;</a></h2>
+<p>Anki uses the system’s temporary folder to store temporary data. If the
+permissions of this folder have been changed from the default settings
+by a rogue app or buggy antivirus app, Anki will not function properly.</p>
+<p>If you’re on a Windows 7 machine, the general steps to fix the problem
+are listed below. As this is somewhat complicated, please ask someone
+knowledgeable about Windows if you are not sure.</p>
+<ol>
+<li>
+<p>Click on the start bar, and type in %temp% (including the percents),
+    then hit enter.</p>
+</li>
+<li>
+<p>Go up one folder, and locate the temp folder. Right click on it, and
+    choose Properties.</p>
+</li>
+<li>
+<p>In the security tab, click on Advanced.</p>
+</li>
+<li>
+<p>Click on the Owner tab. If you’re not listed as the owner, click the
+    button to take ownership.</p>
+</li>
+<li>
+<p>On the permissions tab, ensure that you have full control. On a
+    default W7 install the control will actually be inherited from
+    c:\users\your-username.</p>
+</li>
+</ol>
+<h2 id="corrupt-collections">Corrupt Collections<a class="headerlink" href="#corrupt-collections" title="Permanent link">&para;</a></h2>
+<p>Anki uses a file format that is robust against program and computer
+crashes, but it’s still possible for your collection to become corrupt
+if the files are modified while Anki is open, stored on a network drive,
+or corrupted by a bug.</p>
+<p>When you run Tools&gt;Check Database, you will receive a message if Anki
+detects the file has been corrupted. <strong>The best way to recover from this
+is to restore from the most recent <a href="#backups">automatic backup</a></strong>, but
+if your backup is too old, then you can attempt to repair the corruption
+instead.</p>
+<p>On Linux, make sure sqlite3 is installed. On a Mac, it should be
+installed already. On Windows, download
+<a href="http://www.sqlite.org/sqlite-3_6_23.zip">http://www.sqlite.org/sqlite-3_6_23.zip</a>.</p>
+<p>Next, create a backup of your collection.anki2 file, in case something
+goes wrong with the steps below.</p>
+<p><strong>Linux/OSX</strong></p>
+<p>Open a terminal, change to the folder your collection is located in, and
+type:</p>
+<pre><code>sqlite3 collection.anki2 .dump &gt; dump.txt
+</code></pre>
+<p>Open the resulting dump.txt file in a text editor, and look at the final
+line. If it reads "rollback;", change it to "commit;"</p>
+<p>Then run the following in a terminal:</p>
+<pre><code>cat dump.txt | sqlite3 temp.file
+</code></pre>
+<p>Make sure you use temp.file - do not put collection.anki2 on the right,
+or you will blank out the file. When you’re done, proceed to the final
+step.</p>
+<p><strong>Windows</strong></p>
+<p>Copy the <code>sqlite3.exe</code> program and your deck to your desktop. Then go to
+<strong>Start&gt;Run</strong> and type in <code>cmd.exe</code>.</p>
+<p>If you’re on a recent Windows, the command prompt may not start on your
+desktop. If you don’t see desktop displayed in the command prompt, type
+something like the following, replacing 'administrator' with your login
+name.</p>
+<pre><code>cd C:\Users\Administrator\Desktop
+</code></pre>
+<p>Then type:</p>
+<pre><code>sqlite3 collection.anki2 .dump &gt; dump.txt
+</code></pre>
+<p>Open the resulting dump.txt file in a text editor, and look at the final
+line. If it reads "rollback;", change it to "commit;"</p>
+<p>Then run the following in a terminal:</p>
+<pre><code>type dump.txt | sqlite3 temp.file
+</code></pre>
+<p>Make sure you use temp.file - do not put collection.anki2 on the right,
+or you will blank out the file. When you’re done, proceed to the final
+step.</p>
+<p><strong>Final Step</strong></p>
+<p>Check that you didn’t get an error message, and that temp.file is not
+empty. The procedure optimizes the collection in the process, so it’s
+normal for the new file to be somewhat smaller than the old one.</p>
+<p>When you’ve confirmed the file is not empty:</p>
+<ul>
+<li>
+<p>rename the original collection.anki2 file to something else</p>
+</li>
+<li>
+<p>rename temp.file to collection.anki2</p>
+</li>
+<li>
+<p>move collection.anki2 back into your collection folder, overwriting
+  the old version</p>
+</li>
+<li>
+<p>start Anki and go to Tools&gt;Check Database to make sure the
+  collection has been successfully restored.</p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../exporting/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Exporting
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../stats/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Statistics
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

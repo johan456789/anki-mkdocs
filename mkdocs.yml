@@ -11,9 +11,9 @@ nav:
     - Studying: studying.md
     - Adding/Editing: editing.md
     - Card Templates: templates_intro.md
-      # - Field Replacements: templates_fields.md
-      # - Card Generation: templates_generation.md
-      # - Styling & HTML: templates_styling.md
+    - Field Replacements: templates_fields.md # should be subsection
+    - Card Generation: templates_generation.md # should be subsection
+    - Styling & HTML: templates_styling.md # should be subsection
     - Preferences: preferences.md
     - Deck Options: deck-options.md
     - Syncing with AnkiWeb: syncing.md

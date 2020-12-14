@@ -4,6 +4,10 @@ repo_url: https://github.com/johan456789/anki-mkdocs
 repo_name: anki-mkdocs
 theme:
   name: material
+  favicon: img/favicon.ico
+  logo: img/logo.png
+  icon:
+    repo: fontawesome/brands/github
 markdown_extensions:
   - toc:
       permalink: true

@@ -1,4 +1,7 @@
 site_name: Anki Manual
+site_url: https://johan456789.github.io/anki-mkdocs/
+repo_url: https://github.com/johan456789/anki-mkdocs
+repo_name: anki-mkdocs
 theme:
   name: material
 markdown_extensions:

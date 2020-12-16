@@ -11,6 +11,7 @@ theme:
 markdown_extensions:
   - toc:
       permalink: true
+  - pymdownx.magiclink
 nav:
     - Introduction: intro.md
     - Background: background.md
